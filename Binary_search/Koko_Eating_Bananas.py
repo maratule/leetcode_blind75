@@ -30,6 +30,6 @@ class Solution:
                 l = k + 1
         return res
 
-# check Solution
+
 case = Solution()
 print(case.minEatingSpeed(piles = [3,6,7,11], h = 8 ))
