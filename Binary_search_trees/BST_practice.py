@@ -37,12 +37,14 @@ class Node:
             return "{} is found".format(self.data)
 
 root = Node(54)
+'''
 root.insert(34)
 root.insert(46)
 root.insert(12)
 root.insert(23)
 root.insert(5)
-
+'''
+print(root.left)
 print(root.search(10))
 print(root.search(5))
 
