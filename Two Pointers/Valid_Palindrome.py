@@ -3,7 +3,7 @@ class Solution:
         def isalpha(c):
             return (ord('A') <= ord(c) <= ord('Z') or
                     ord('a') <= ord(c) <= ord('z') or
-                     ord('0') <= ord(c) <= ord('9'))
+                    ord('0') <= ord(c) <= ord('9'))
 
         left, right = 0, len(s)-1
 
@@ -19,7 +19,7 @@ class Solution:
         return True
 
 
-s = "A man, a plan, a canal: Panma"
+s = "A man, a plan, a canal: Panama"
 case = Solution()
 print(case.isPalindrome(s))
 

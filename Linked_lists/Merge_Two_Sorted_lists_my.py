@@ -31,4 +31,3 @@ class Solution(object):
 
 case = Solution()
 case.mergeTwoLists(list1, list2)
-

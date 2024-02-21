@@ -11,6 +11,8 @@ Constraints:
 1 <= piles.length <= 104
 piles.length <= h <= 109
 1 <= piles[i] <= 109'''
+import math
+from typing import List
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:

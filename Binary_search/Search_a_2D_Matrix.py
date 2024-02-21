@@ -31,13 +31,13 @@ def finder(matrix, target):
         return False
     else:
         while top <= bot:
-            midle_row = (top + bot) // 2
-            if matrix[midle_row][-1] < target:
-                top = midle_row + 1
-            elif matrix[midle_row][0] > target:
-                bot = midle_row - 1
+            middle_row = (top + bot) // 2
+            if matrix[middle_row][-1] < target:
+                top = middle_row + 1
+            elif matrix[middle_row][0] > target:
+                bot = middle_row - 1
             else:
-               return bin_search(matrix[midle_row], target)
+               return bin_search(matrix[middle_row], target)
     return False
 
 print(finder(array2d, target))
