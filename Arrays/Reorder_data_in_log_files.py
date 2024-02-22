@@ -24,7 +24,7 @@ class Solution:
         dig = []
         for log in logs:
             log_content = log.split(' ', 1)[1]
-            if (ord(log_content[0])>=ord('0') and ord(log_content[0])<=ord('9')):
+            if (ord(log_content[0]) >= ord('0') and ord(log_content[0]) <= ord('9')):
                 dig.append(log)
             else:
                 let.append(log)
