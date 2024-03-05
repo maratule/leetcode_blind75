@@ -32,12 +32,13 @@ Constraints:
 -100 <= nums[i] <= 100
 nums is sorted in non-decreasing order.
 '''
-# nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 # nums = [10,11,12,13,24,25,36,37,48]
 # nums = [1,1,1,1,1,1,1,2]
 # nums = [0,0]
 
 print(id(nums))
+
 class Solution:
     def removeDuplicates(self, nums):
 
@@ -46,10 +47,10 @@ class Solution:
             return 1
         else:
             i = 0
-            while i < (len(nums)-1):
+            while i < (len(nums) - 1):
                 j = i + 1
                 while nums[j] == nums[i]:
-                    if j < len(nums)-1:
+                    if j < len(nums) - 1:
                         nums[j] = '_'
                         dupl += 1
                         j += 1

@@ -8,6 +8,7 @@ Input: nums = [1,2,3,4]
 Output: false
 '''
 
+nums = [1,2,3,4]
 class Solution(object):
     def containsDuplicate(self, nums):
         """
