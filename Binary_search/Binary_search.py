@@ -1,6 +1,7 @@
 '''Binary search
 
-Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search
+target in nums. If target exists, then return its index. Otherwise, return -1.
 You must write an algorithm with O(log n) runtime complexity.
 
 Example 1:
@@ -14,11 +15,13 @@ All the integers in nums are unique.
 nums is sorted in ascending order.'''
 
 import numpy as np
+import datetime
 import time
 
-a = np.arange(100, 200)
+# a = np.arange(100, 200)
+a = [-1,0,3,5,9,12]
 
-
+t1 = datetime.datetime.now()
 class Solution(object):
     def binary_search(self, nums, target):
         """
@@ -41,6 +44,7 @@ class Solution(object):
 
 
 case = Solution()
+t2 = datetime.datetime.now()
 
 print(a)
-print(case.binary_search(a, 100))
+print(case.binary_search(a, 9))
